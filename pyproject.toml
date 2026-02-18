@@ -1,0 +1,35 @@
+[project]
+name = "goopenbot"
+version = "0.1.0"
+description = "AI-powered development tool with local Ollama"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "typer>=0.12.0",
+    "rich>=13.7.0",
+    "openai>=1.12.0",
+    "pydantic>=2.5.0",
+    "httpx>=0.26.0",
+    "sqlalchemy>=2.0.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "ruff>=0.2.0",
+]
+
+[project.scripts]
+goopenbot = "goopenbot.main:app"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.typer]
+add_completion = true
