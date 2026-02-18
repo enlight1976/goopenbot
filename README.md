@@ -1,0 +1,1 @@
+Hello there! Welcome to GoOpenBot. This tool aims to streamline your development process by offering utilities like file operations, command execution, and text search capabilities. Ready to see how it can assist you?
